@@ -1,0 +1,24 @@
+<resources>
+    <!--apps name, activity names-->
+    <string name="app_name">SkiApp</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="best_resort">Best resort</string>
+    <string name="resorts_list">Resorts list</string>
+    <string name="rate_title">Rate</string>
+
+    <!--connection-->
+    <string name="connectionURL">http://172.20.10.2:8888</string>
+    <!--<string name="connectionURL">http://192.168.3.1:8888</string>-->
+    <string name="get">GET</string>
+    <string name="post">POST</string>
+    <string name="bestResortQ">Call BestResort()</string>
+    <string name="selectPhp">/select.php</string>
+    <string name="insertPhp">/insert.php</string>
+
+    <!--query-->
+    <string name="selectFrom">SELECT X.* FROM</string>
+    <string name="secondLevel">X JOIN Resort R on R.ResortID = X.ResortID where R.ResortID =</string>
+    <string name="thirdLevelTown">X JOIN Town Y on X.TownID = Y.TownID JOIN Resort R on R.ResortID = Y.ResortID where R.ResortID =</string>
+    <string name="thirdLevelMountain">X JOIN Mountain Y on X.MountainID = Y.MountainID JOIN Resort R on R.ResortID = Y.ResortID where R.ResortID =</string>
+    <string name="insertRate">INSERT INTO Rate (ResortID, Rate) Values (</string>
+</resources>
